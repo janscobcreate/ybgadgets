@@ -5,7 +5,8 @@ This project contains two different deployment paths:
 ## Client presentation: GitHub Pages / static hosting
 
 Upload the **contents of `dist/`** as the repository root:
-`index.html`, `admin/index.html`, and `assets/`.
+`index.html`, `shop/index.html`, `product/index.html`, `admin/index.html`,
+and `assets/`.
 
 Enable GitHub Pages from the `main` branch, root folder. The storefront and
 `admin/` dashboard will work as a fast static prototype. Product edits,
@@ -16,6 +17,20 @@ real customers or payments.
 
 There are 14 illustrative products; the images and prices are placeholders,
 not verified stock or current offers.
+
+### New shopping pages
+
+- **Shop** (`shop/`): full collection with category browsing, text search,
+  promotional filters and price sorting.
+- **Product details** (`product/?id=iphone-15-pro`): full information,
+  specifications, quantity selector, add-to-bag, order enquiries and four
+  related product recommendations at the bottom.
+- Navigation uses **relative URLs** so it works when GitHub Pages serves a
+  repository under `username.github.io/repository-name/`.
+- Product cards on the homepage and Shop page open their detailed listings.
+
+To update a previous GitHub Pages upload, extract the new ZIP, replace the
+existing repository files with the ZIP contents, and commit the changes.
 
 ## PHP + MySQL path: shared live operations
 
